@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --color-hotel-bg: #F8F6F1;
+  --color-hotel-surface: #FFFFFF;
+  --color-hotel-surface-subtle: #F2EFE9;
+  --color-hotel-card: #FFFFFF;
+  --color-hotel-dark: #171717;
+  --color-hotel-accent: #A67C52;
+  --color-hotel-accent-hover: #8C653E;
+  --color-hotel-accent-light: #F2EBE1;
+  --color-hotel-text: #2B2B2B;
+  --color-hotel-heading: #171717;
+  --color-hotel-muted: #737373;
+  --color-hotel-border: #E5E0D8;
+  --color-hotel-border-subtle: #ECE8E0;
+  --color-hotel-input-bg: #F8F6F1;
+  --color-hotel-dropdown-bg: #FFFFFF;
+
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+.dark {
+  --color-hotel-bg: #0E0E11;
+  --color-hotel-surface: #17171C;
+  --color-hotel-surface-subtle: #202026;
+  --color-hotel-card: #17171C;
+  --color-hotel-dark: #FFFFFF;
+  --color-hotel-accent: #C5A880;
+  --color-hotel-accent-hover: #D4BB95;
+  --color-hotel-accent-light: #26211A;
+  --color-hotel-text: #E5E2D9;
+  --color-hotel-heading: #FAF8F5;
+  --color-hotel-muted: #A39E93;
+  --color-hotel-border: #2C2A26;
+  --color-hotel-border-subtle: #383530;
+  --color-hotel-input-bg: #131317;
+  --color-hotel-dropdown-bg: #17171C;
+}
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  --color-hotel-bg: var(--color-hotel-bg);
+  --color-hotel-surface: var(--color-hotel-surface);
+  --color-hotel-surface-subtle: var(--color-hotel-surface-subtle);
+  --color-hotel-card: var(--color-hotel-card);
+  --color-hotel-dark: var(--color-hotel-dark);
+  --color-hotel-accent: var(--color-hotel-accent);
+  --color-hotel-accent-hover: var(--color-hotel-accent-hover);
+  --color-hotel-accent-light: var(--color-hotel-accent-light);
+  --color-hotel-text: var(--color-hotel-text);
+  --color-hotel-heading: var(--color-hotel-heading);
+  --color-hotel-muted: var(--color-hotel-muted);
+  --color-hotel-border: var(--color-hotel-border);
+  --color-hotel-border-subtle: var(--color-hotel-border-subtle);
+  --color-hotel-input-bg: var(--color-hotel-input-bg);
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: var(--color-hotel-bg);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-hotel-bg);
+  color: var(--color-hotel-text);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  -webkit-tap-highlight-color: transparent;
+  padding-left: var(--sal);
+  padding-right: var(--sar);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Safe area utility classes */
+.pt-safe {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+.safe-p-x {
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+h1, h2, h3, .font-serif-luxury {
+  font-family: var(--font-serif);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Tabular figures for pricing and dates */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Ensure mobile form inputs don't trigger iOS zoom by maintaining at least 16px font */
+@media (max-width: 640px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Hide scrollbar utility for touch swipe bars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-hotel-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-hotel-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-hotel-accent);
+}

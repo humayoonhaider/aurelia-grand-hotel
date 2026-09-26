@@ -1,0 +1,9 @@
+{
+  "name": "Aurelia Grand Hotel",
+  "description": "Aurelia Grand Hotel — Premium luxury hotel booking concept in Islamabad, Pakistan. Designed & developed as a portfolio showcase by SH Web Studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
+
