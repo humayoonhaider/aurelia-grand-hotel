@@ -44,7 +44,7 @@ export const About: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative border border-[#E5E0D8] dark:border-[#2C2A26] bg-white dark:bg-[#16161A] p-2 shadow-2xl transition-colors">
               <OptimizedImage
-                src="/src/assets/images/hero_hotel_facade_1790449575779.jpg"
+                src="/images/hero_hotel_facade_1790449575779.jpg"
                 alt="Aurelia Grand Hotel Architecture"
                 aspectRatio="4/3"
                 priority={true}

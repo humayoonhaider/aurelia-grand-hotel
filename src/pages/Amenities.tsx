@@ -41,7 +41,7 @@ export const Amenities: React.FC = () => {
         {/* Featured Hero Visual for Amenities */}
         <div className="relative border border-[#E5E0D8] dark:border-[#2C2A26] overflow-hidden mb-12 sm:mb-16 shadow-xl max-h-[460px]">
           <OptimizedImage
-            src="/src/assets/images/amenity_rooftop_pool_1790449648998.jpg"
+            src="/images/amenity_rooftop_pool_1790449648998.jpg"
             alt="Aurelia Grand Rooftop Infinity Pool"
             aspectRatio="16/9"
             priority={true}

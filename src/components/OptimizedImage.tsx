@@ -30,8 +30,11 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   const [hasError, setHasError] = useState<boolean>(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
+  // Normalize image src so both '/src/assets/images/...' and '/images/...' work reliably in dev and production
+  const normalizedSrc = src ? src.replace(/^\/src\/assets\/images\//, '/images/') : '';
+
   // Derive blur placeholder data URI
-  const blurPlaceholder = placeholderSrc || getBlurPlaceholder(src);
+  const blurPlaceholder = placeholderSrc || getBlurPlaceholder(normalizedSrc || src);
 
   // IntersectionObserver for lazy loading with eager prefetch margin (250px)
   useEffect(() => {
@@ -110,7 +113,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
       {!hasError ? (
         (isIntersecting || priority) && (
           <img
-            src={src}
+            src={normalizedSrc || src}
             alt={alt}
             loading={priority ? 'eager' : 'lazy'}
             decoding={priority ? 'sync' : 'async'}

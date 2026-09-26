@@ -13,11 +13,11 @@ export const ROOMS: Room[] = [
     bedType: '1 King Bed',
     viewType: 'City View',
     pricePerNightPKR: 28000,
-    primaryImage: '/src/assets/images/room_deluxe_king_1790449591596.jpg',
+    primaryImage: '/images/room_deluxe_king_1790449591596.jpg',
     galleryImages: [
-      '/src/assets/images/room_deluxe_king_1790449591596.jpg',
-      '/src/assets/images/room_executive_suite_1790449606103.jpg',
-      '/src/assets/images/hero_hotel_facade_1790449575779.jpg'
+      '/images/room_deluxe_king_1790449591596.jpg',
+      '/images/room_executive_suite_1790449606103.jpg',
+      '/images/hero_hotel_facade_1790449575779.jpg'
     ],
     amenities: [
       'High-speed Wi-Fi (1 Gbps)',
@@ -50,11 +50,11 @@ export const ROOMS: Room[] = [
     bedType: '1 King Bed + Rollaway Option',
     viewType: 'Margalla Hills & City View',
     pricePerNightPKR: 42000,
-    primaryImage: '/src/assets/images/room_executive_suite_1790449606103.jpg',
+    primaryImage: '/images/room_executive_suite_1790449606103.jpg',
     galleryImages: [
-      '/src/assets/images/room_executive_suite_1790449606103.jpg',
-      '/src/assets/images/room_deluxe_king_1790449591596.jpg',
-      '/src/assets/images/amenity_rooftop_pool_1790449648998.jpg'
+      '/images/room_executive_suite_1790449606103.jpg',
+      '/images/room_deluxe_king_1790449591596.jpg',
+      '/images/amenity_rooftop_pool_1790449648998.jpg'
     ],
     amenities: [
       'Dedicated Living & Dining Lounge',
@@ -87,11 +87,11 @@ export const ROOMS: Room[] = [
     bedType: '1 Master King Bed + Executive Daybed',
     viewType: 'Panoramic Margalla Mountain & Horizon View',
     pricePerNightPKR: 75000,
-    primaryImage: '/src/assets/images/room_presidential_suite_1790449619590.jpg',
+    primaryImage: '/images/room_presidential_suite_1790449619590.jpg',
     galleryImages: [
-      '/src/assets/images/room_presidential_suite_1790449619590.jpg',
-      '/src/assets/images/hero_hotel_facade_1790449575779.jpg',
-      '/src/assets/images/amenity_rooftop_pool_1790449648998.jpg'
+      '/images/room_presidential_suite_1790449619590.jpg',
+      '/images/hero_hotel_facade_1790449575779.jpg',
+      '/images/amenity_rooftop_pool_1790449648998.jpg'
     ],
     amenities: [
       '24/7 Dedicated Butler Service',

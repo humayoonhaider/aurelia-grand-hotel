@@ -17,7 +17,7 @@ export const RoomGallery: React.FC<RoomGalleryProps> = ({
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   // Safe fallback if images array is empty
-  const activeList = images.length > 0 ? images : ['/src/assets/images/hero_hotel_facade_1790449575779.jpg'];
+  const activeList = images.length > 0 ? images : ['/images/hero_hotel_facade_1790449575779.jpg'];
   const currentImage = activeList[selectedIndex] || activeList[0];
 
   const handlePrev = useCallback(() => {

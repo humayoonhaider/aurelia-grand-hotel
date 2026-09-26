@@ -68,7 +68,7 @@ export const Dining: React.FC = () => {
 
             <div className="lg:col-span-6 relative h-[220px] sm:h-[320px] lg:h-[480px]">
               <OptimizedImage
-                src="/src/assets/images/dining_ember_table_1790449634377.jpg"
+                src="/images/dining_ember_table_1790449634377.jpg"
                 alt="The Ember Table Interior"
                 containerClassName="w-full h-full"
                 priority={true}

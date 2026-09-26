@@ -19,7 +19,7 @@ export const Home: React.FC = () => {
         {/* Background Image with Scrim */}
         <div className="absolute inset-0 z-0">
           <OptimizedImage
-            src="/src/assets/images/hero_hotel_facade_1790449575779.jpg"
+            src="/images/hero_hotel_facade_1790449575779.jpg"
             alt="Aurelia Grand Hotel Islamabad Facade"
             priority={true}
             className="opacity-45 scale-100"
@@ -122,7 +122,7 @@ export const Home: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative border border-[#E5E0D8] dark:border-[#2C2A26] bg-white dark:bg-[#16161A] p-2 sm:p-3 shadow-xl">
               <OptimizedImage
-                src="/src/assets/images/room_presidential_suite_1790449619590.jpg"
+                src="/images/room_presidential_suite_1790449619590.jpg"
                 alt="Aurelia Grand Interior Suite"
                 aspectRatio="4/3"
               />
@@ -175,7 +175,7 @@ export const Home: React.FC = () => {
         <div className="bg-[#171717] text-white overflow-hidden grid grid-cols-1 lg:grid-cols-12 border border-stone-800 shadow-2xl">
           <div className="lg:col-span-7 relative min-h-[280px] sm:min-h-[360px] lg:min-h-[500px]">
             <OptimizedImage
-              src="/src/assets/images/dining_ember_table_1790449634377.jpg"
+              src="/images/dining_ember_table_1790449634377.jpg"
               alt="The Ember Table Restaurant Ambiance"
               containerClassName="w-full h-full min-h-full"
               className="object-cover"
