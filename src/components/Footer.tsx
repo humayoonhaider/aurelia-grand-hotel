@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
               Stay Above Expectations · Islamabad
             </p>
             <p className="text-xs sm:text-sm text-stone-400 font-light leading-relaxed max-w-sm">
-              A concept luxury hospitality project crafted by <strong>SH Web Studio</strong>, embodying refined architectural serenity, intuitive service, and thoughtful guest sanctuaries.
+              A concept luxury hospitality project crafted by <strong>Zenvex</strong>, embodying refined architectural serenity, intuitive service, and thoughtful guest sanctuaries.
             </p>
 
             <div className="pt-1">
@@ -144,7 +144,7 @@ export const Footer: React.FC = () => {
           <div className="text-center md:text-left space-y-1">
             <p className="text-stone-400 font-medium">
               © 2026 Aurelia Grand Hotel — Concept Project by{' '}
-              <span className="text-white font-semibold tracking-wide">SH Web Studio</span>
+              <span className="text-white font-semibold tracking-wide">Zenvex</span>
             </p>
             <p className="text-[10px] sm:text-[11px] text-stone-600">
               Fictional demonstration website created for portfolio and client showcase purposes. No real monetary transactions or stays.

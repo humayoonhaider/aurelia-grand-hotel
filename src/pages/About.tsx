@@ -126,10 +126,10 @@ export const About: React.FC = () => {
             Portfolio Showcase
           </span>
           <h3 className="text-xl sm:text-2xl font-serif-luxury text-[#171717] dark:text-[#FAF8F5]">
-            Concept Project by SH Web Studio
+            Concept Project by Zenvex
           </h3>
           <p className="text-xs sm:text-sm text-[#777777] dark:text-[#A39E93] leading-relaxed max-w-xl mx-auto">
-            This website is a portfolio concept demonstration created by <strong>SH Web Studio</strong> to showcase high-tier web craftsmanship, modern React architecture, and responsive UX design for luxury hospitality clients.
+            This website is a portfolio concept demonstration created by <strong>Zenvex</strong> to showcase high-tier web craftsmanship, modern React architecture, and responsive UX design for luxury hospitality clients.
           </p>
           <div className="pt-2">
             <Link
