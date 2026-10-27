@@ -7,6 +7,7 @@ import { QuickSearch } from '../components/QuickSearch';
 import { SectionHeading } from '../components/SectionHeading';
 import { RoomCard } from '../components/RoomCard';
 import { OptimizedImage } from '../components/OptimizedImage';
+import { Hero3DBackground } from '../components/Hero3DBackground';
 import { ArrowRight, Compass, Sparkles, Utensils, Shield, CheckCircle } from 'lucide-react';
 
 export const Home: React.FC = () => {
@@ -16,15 +17,9 @@ export const Home: React.FC = () => {
     <div className="space-y-0">
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[92vh] lg:min-h-screen flex items-center justify-center bg-[#171717] overflow-hidden pt-24 sm:pt-28 pb-32 sm:pb-36">
-        {/* Background Image with Scrim */}
+        {/* Background Animation with Scrim */}
         <div className="absolute inset-0 z-0">
-          <OptimizedImage
-            src="/images/hero_hotel_facade_1790449575779.jpg"
-            alt="Aurelia Grand Hotel Islamabad Facade"
-            priority={true}
-            className="opacity-45 scale-100"
-            containerClassName="w-full h-full"
-          />
+          <Hero3DBackground />
           <div className="absolute inset-0 bg-gradient-to-t from-[#171717] via-[#171717]/40 to-[#171717]/80 pointer-events-none" />
         </div>
 
